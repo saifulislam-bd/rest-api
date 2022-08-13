@@ -25,9 +25,7 @@ const updateUSer = (req, res) => {
     const { username, email } = req.body;
     users
         .filter((user) => user.id === userId)
-        // eslint-disable-next-line array-callback-return
         .map((selectedUser) => {
-            // eslint-disable-next-line no-param-reassign
             selectedUser.username = username;
             selectedUser.email = email;
         });
