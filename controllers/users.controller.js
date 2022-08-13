@@ -2,9 +2,9 @@
 const { v4: uuidv4 } = require('uuid');
 let users = require('../models/users.model');
 
-// GET USers
+// GET Users
 const getAllUSers = (req, res) => {
-    res.status(200).json({ users });
+    res.status(200).json(users);
 };
 
 // Create User
