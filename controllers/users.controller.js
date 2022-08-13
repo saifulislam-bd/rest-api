@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 const { v4: uuidv4 } = require('uuid');
 let users = require('../models/users.model');
 
